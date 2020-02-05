@@ -1,0 +1,228 @@
+
+:root {
+    --yellow: hsl(0, 0%, 67%);
+    --yellow-lighter: hsl(0, 0%, 86%);
+    --blue: hsl(0, 0%, 58%);
+    --blue-dark: hsl(0, 0%, 31%);
+    --pink: hsl(0, 0%, 65%);
+    --gray: hsl(0, 0%, 87%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-main: serif;
+    --font-special: cursive;
+
+    --shadow: 0 0.25rem 0 0 hsla(0, 0%, 0%, 0.25);
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-main);
+    background: var(--blue);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--font-special);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
+    position: relative;
+    background: url(./img/clouds.svg) repeat-x 65% center;
+}
+
+.logo {
+    width: 80%;
+    height: auto;
+    max-width: 500px;
+}
+
+.lang {
+    position: absolute;
+    right: 2rem;
+    top: 1.25rem;
+}
+.lang__btn {
+    font-family: var(--font-special);
+    color: var(--pink);
+    text-decoration: none;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 1 50%;
+    padding: 7vh 3vw;
+    background: url(./img/wave.svg) var(--blue-dark) repeat-x 0 0;
+    background-size: 0.75rem;
+}
+
+.course__nearest {
+    margin: 1rem 0 0 0;
+    padding: 0; 
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--gray);
+}
+
+.course__name {
+    margin: 1rem 0 0.25rem 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--yellow);
+}
+
+.course__address {
+    margin: 0; padding: 0;
+    font-size: 0.75rem;
+    color:var(--gray);
+}
+
+.course__distance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 4.2rem;
+    height: 4.2rem;
+    position: absolute;
+    right: 6vw;
+    top: -1rem;
+    border-radius: 50%;
+    color: var(--white);
+    background: none;
+    box-shadow: var(--shadow);
+}
+.course__distance-number {
+    font-size: 1.5rem;
+    line-height: 1;
+    margin: 0.5rem 0 0.1rem 0; 
+    padding: 0;
+}
+.course__distance-unit {
+    font-size: 0.625rem;
+    line-height: 1;
+    margin: 420px; padding: 0;
+}
+
+.course__data {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0;
+    font-size: 34px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.course__data-item__number {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.btn-primary {
+    font-size: 9rem;
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0 1.5rem 0;
+    font-family: var(--font-special);
+    color: var(--white);
+    background: #927533;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 0.5ch;
+    box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+}
+.btn-secondary::after {
+    display: inline-block;
+    content: "";
+    background: url(./img/arrow-right.svg) no-repeat;
+    background-position: 100% 50%;
+    width: 2ch;
+    height: 1ch;
+}
+
+
+
+
+
+
+/* LAI EKRAAN */
+
+@media (min-width: 1024px) { 
+
+    .hero {
+        flex-direction: row;
+    }
+    .intro {
+        flex: 1 1 70%;
+        height: 100vh;
+        background-size: 20%;
+        background-repeat: repeat;
+    }
+    .course {
+        flex: 1 1 30%;
+        min-width: 500px;
+        height: 100vh;
+        padding-top: 15vh;
+        background-size: initial;
+        background-image: none;
+        overflow-y: auto;
+    }
+
+    .course__distance {
+        top: 10%;
+        right: 10%;
+    }
+
+    .course__nearest {
+        font-size: 0.875rem;
+    }
+
+    .course__name {
+        font-size: 0.25rem;
+        margin: 2rem 0 0.5rem 0;
+        transform: rotate(10deg);
+    }
+    .course__address {
+        font-size: 0.875rem;
+    }
+    .course__data {
+        margin: 2rem 0;
+    }
+    .course__data-item__number {
+        font-size: 2.25rem;
+    }
+    .btn-secondary {
+        margin: 15vh 0 0 0;
+        font-size: 1rem;
+    }
+}
