@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700&display=swap');
 :root {
     --yellow: hsl(56, 77%, 67%);
     --yellow-lighter: hsl(58, 80%, 86%);
@@ -207,7 +207,7 @@ h1, h2, h3, h4, h5 {
     }
 
     .course__distance {
-        top: 20%;
+        top: 18%;
         right: 10%;
         
     }
@@ -223,9 +223,11 @@ h1, h2, h3, h4, h5 {
     }
     .course__address {
         font-size: 0.875rem;
+        margin-top: 10px;
+
     }
     .course__data {
-        margin: 2rem 0;
+        margin: 2.25rem 0;
     }
     .course__data-item__number {
         font-size: 2.25rem;
