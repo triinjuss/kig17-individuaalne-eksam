@@ -1,15 +1,15 @@
-
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
 :root {
-    --yellow: hsl(0, 0%, 67%);
-    --yellow-lighter: hsl(0, 0%, 86%);
-    --blue: hsl(0, 0%, 58%);
-    --blue-dark: hsl(0, 0%, 31%);
-    --pink: hsl(0, 0%, 65%);
+    --yellow: hsl(56, 77%, 67%);
+    --yellow-lighter: hsl(58, 80%, 86%);
+    --blue: hsl(184, 45%, 58%);
+    --blue-dark: hsl(194, 48%, 31%);
+    --pink: hsl(335, 46%, 65%);
     --gray: hsl(0, 0%, 87%);
     --white: hsl(0, 0%, 100%);
 
-    --font-main: serif;
-    --font-special: cursive;
+    --font-main: 'Roboto', sans-serif;
+    --font-special: 'Roboto Slab', serif;
 
     --shadow: 0 0.25rem 0 0 hsla(0, 0%, 0%, 0.25);
 }
@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5 {
     font-family: var(--font-special);
 }
 
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5 {
     align-items: center;
     flex: 1 1 50%;
     position: relative;
-    background: url(./img/clouds.svg) repeat-x 65% center;
+    background: url(./img/taustaillustratsioon.svg) repeat-x 65% center;
 }
 
 .logo {
@@ -61,7 +62,7 @@ h1, h2, h3, h4, h5 {
 }
 .lang__btn {
     font-family: var(--font-special);
-    color: var(--pink);
+    color: var(--blue-dark);
     text-decoration: none;
 }
 
@@ -109,8 +110,8 @@ h1, h2, h3, h4, h5 {
     right: 6vw;
     top: -1rem;
     border-radius: 50%;
-    color: var(--white);
-    background: none;
+    color: var(--blue-dark);
+    background: var(--yellow);
     box-shadow: var(--shadow);
 }
 .course__distance-number {
@@ -118,22 +119,23 @@ h1, h2, h3, h4, h5 {
     line-height: 1;
     margin: 0.5rem 0 0.1rem 0; 
     padding: 0;
+    
 }
 .course__distance-unit {
     font-size: 0.625rem;
     line-height: 1;
-    margin: 420px; padding: 0;
+    margin: 0px; padding: 0;
 }
 
 .course__data {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
     max-width: 400px;
     margin: 1rem 0;
-    font-size: 34px;
+    font-size: 14px;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--white);
 }
 
 .course__data-item__number {
@@ -142,12 +144,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .btn-primary {
-    font-size: 9rem;
+    font-size: 1.6rem;
     padding: 0.75rem 1.5rem;
     margin: 1rem 0 1.5rem 0;
     font-family: var(--font-special);
     color: var(--white);
-    background: #927533;
+    background:var(--pink);
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -164,7 +166,7 @@ h1, h2, h3, h4, h5 {
 .btn-secondary::after {
     display: inline-block;
     content: "";
-    background: url(./img/arrow-right.svg) no-repeat;
+    background: url(./img/arrow.svg) no-repeat;
     background-position: 100% 50%;
     width: 2ch;
     height: 1ch;
