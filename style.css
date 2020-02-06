@@ -84,7 +84,6 @@ h1, h2, h3, h4, h5 {
     margin: 1rem 0 0 0;
     padding: 0; 
     font-size: 0.75rem;
-    font-weight: 700;
     text-transform: uppercase;
     color: var(--gray);
 }
@@ -92,7 +91,7 @@ h1, h2, h3, h4, h5 {
 .course__name {
     margin: 1.3125rem 0 0.625rem 0;
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 700;
     color: var(--yellow);
 }
 
