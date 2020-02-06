@@ -64,6 +64,8 @@ h1, h2, h3, h4, h5 {
     font-family: var(--font-special);
     color: var(--blue-dark);
     text-decoration: none;
+    font-weight: 700;
+    font-size: 1.125rem;
 }
 
 .course {
@@ -82,12 +84,13 @@ h1, h2, h3, h4, h5 {
     margin: 1rem 0 0 0;
     padding: 0; 
     font-size: 0.75rem;
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--gray);
 }
 
 .course__name {
-    margin: 1rem 0 0.25rem 0;
+    margin: 1rem 0 0.625rem 0;
     font-size: 1.5rem;
     font-weight: 100;
     color: var(--yellow);
@@ -116,6 +119,7 @@ h1, h2, h3, h4, h5 {
 }
 .course__distance-number {
     font-size: 1.5rem;
+    font-weight: 700;
     line-height: 1;
     margin: 0.5rem 0 0.1rem 0; 
     padding: 0;
@@ -123,6 +127,7 @@ h1, h2, h3, h4, h5 {
 }
 .course__distance-unit {
     font-size: 0.625rem;
+    font-weight: 700;
     line-height: 1;
     margin: 0px; padding: 0;
 }
@@ -133,7 +138,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     max-width: 400px;
     margin: 1rem 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-transform: uppercase;
     color: var(--white);
 }
@@ -144,7 +149,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .btn-primary {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
+    font-weight: 700;
     padding: 0.75rem 1.5rem;
     margin: 1rem 0 1.5rem 0;
     font-family: var(--font-special);
@@ -187,7 +193,7 @@ h1, h2, h3, h4, h5 {
     .intro {
         flex: 1 1 70%;
         height: 100vh;
-        background-size: 20%;
+        background-size: 100%;
         background-repeat: repeat;
     }
     .course {
@@ -201,8 +207,9 @@ h1, h2, h3, h4, h5 {
     }
 
     .course__distance {
-        top: 10%;
+        top: 20%;
         right: 10%;
+        
     }
 
     .course__nearest {
@@ -210,9 +217,9 @@ h1, h2, h3, h4, h5 {
     }
 
     .course__name {
-        font-size: 0.25rem;
+        font-size: 2.25rem;
         margin: 2rem 0 0.5rem 0;
-        transform: rotate(10deg);
+        transform: rotate(0deg);
     }
     .course__address {
         font-size: 0.875rem;
